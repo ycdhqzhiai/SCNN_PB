@@ -1,17 +1,3 @@
-# -*-coding: utf-8 -*-
-"""
-    @Project: tensorflow_models_nets
-    @File   : convert_pb.py
-    @Author : panjq
-    @E-mail : pan_jinquan@163.com
-    @Date   : 2018-08-29 17:46:50
-    @info   :
-    -通过传入 CKPT 模型的路径得到模型的图和变量数据
-    -通过 import_meta_graph 导入模型中的图
-    -通过 saver.restore 从模型中恢复图中各个变量的数据
-    -通过 graph_util.convert_variables_to_constants 将模型持久化
-"""
- 
 import tensorflow as tf
 from tensorflow.python.framework import graph_util
  
